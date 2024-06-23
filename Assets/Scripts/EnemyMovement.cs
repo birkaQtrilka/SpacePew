@@ -7,11 +7,12 @@ public class EnemyMovement : MonoBehaviour
     [field: SerializeField] public float ForwardSpeed { get; set; }
     Vector3 _constraintStart;
     Vector3 _constraintEnd;
-
+    float _randomOffset;
     public void Init(Vector3 constraintStart, Vector3 contrstaintEnd)
     {
         _constraintStart = constraintStart;
         _constraintEnd = contrstaintEnd;
+        _randomOffset = Random.Range(1, 30);
     }
 
     void Update()
@@ -19,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
         if (_constraintStart == null) return;
 
         transform.position += Time.deltaTime * ForwardSpeed * transform.forward;
-        Vector3 moveVec = Mathf.Sin(Time.time * HorizontalSpeed) * HorizontalAmplitude * transform.right;
+        Vector3 moveVec = Mathf.Sin(Time.time * HorizontalSpeed + _randomOffset) * HorizontalAmplitude * transform.right;
         transform.position += moveVec;
         float distanceToStart = Vector3.Dot(_constraintStart - transform.position, transform.right);
         float distanceToEnd = Vector3.Dot(transform.position - _constraintEnd, transform.right);
