@@ -14,6 +14,8 @@ public class GameOverPanel : MonoBehaviour
         _restartBtn.onClick.AddListener(Restart);
         _quitBtn.onClick.AddListener(Quit);
 
+
+
         _scoreTextMesh.text = "Score: " + ScoreManager.Instance.Score.ToString();
         _highScoreTextMesh.text = "High Score: " + ScoreManager.Instance.HighScore;
     }

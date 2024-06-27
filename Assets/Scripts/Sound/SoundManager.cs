@@ -72,6 +72,11 @@ public class SoundManager : MonoBehaviour
         return sound.Clip != null;
     }
 
+    public void ChangeMasterVolume(float volume)
+    {
+        _masterVolume = volume;
+    }
+
     public void PlaySound(SoundName soundName)
     {
         if (!TryGetSound(soundName, out SoundData soundData))

@@ -53,14 +53,6 @@ public class SceneHandler : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitGame();
-        }        
-    }
-
     void OnDestroy()
     {
         SceneLoaded = null;
