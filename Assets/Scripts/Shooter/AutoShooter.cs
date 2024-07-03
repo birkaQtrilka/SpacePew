@@ -8,7 +8,7 @@ public class AutoShooter : MonoBehaviour
     [SerializeField] Shooter[] _shooters;
     float _currCooldown;
 
-    private void Update()
+    void Update()
     {
         if(!CanShoot) return;
 

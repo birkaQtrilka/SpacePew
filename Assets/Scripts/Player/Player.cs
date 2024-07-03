@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
     void OnShooterChange(Shooter oldShooter, Shooter newShooter)
     {
         int oldShooterIndex = Array.IndexOf(Shooters, oldShooter);
+        if (oldShooterIndex == -1) return;
+
         Shooters[oldShooterIndex] = newShooter;
 
         DisconnectShooter(oldShooter);
@@ -63,21 +65,18 @@ public class Player : MonoBehaviour
 
     public void OnBarierHit(GameObject destroyedItem)
     {
-        if(destroyedItem.CompareTag("Enemy"))
-        {
-            _health.TakeDamage(1);
-        }
+        if (!destroyedItem.CompareTag("Enemy")) return;
+        
+        _health.TakeDamage(1);
     }
 
     void CheckEnemyKill(Bullet blt, GameObject hitObj)
     {
-        if(hitObj.TryGetComponent<Health>(out var enemyHealth))
-        {
-            if(enemyHealth.Value == 0 && enemyHealth.TryGetComponent<ScoreStat>(out var scoreStat))
-            {
+        if(!hitObj.TryGetComponent<Health>(out var enemyHealth)) return;
 
-                ScoreManager.Instance.IncreaseScore(scoreStat.Value);
-            }
+        if(enemyHealth.Value == 0 && enemyHealth.TryGetComponent<ScoreStat>(out var scoreStat))
+        {
+            ScoreManager.Instance.IncreaseScore(scoreStat.Value);
         }
     }
 
@@ -88,7 +87,6 @@ public class Player : MonoBehaviour
         foreach (var shooter in Shooters)
         {
             DisconnectShooter(shooter);
-
         }
     }
 }

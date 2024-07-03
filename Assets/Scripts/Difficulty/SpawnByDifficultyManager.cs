@@ -9,6 +9,7 @@ public class SpawnByDifficultyManager : MonoBehaviour
 
     float _startMin;
     float _startMax;
+
     void Start()
     {
         _difficultyManager = DifficultyManager.Instance;

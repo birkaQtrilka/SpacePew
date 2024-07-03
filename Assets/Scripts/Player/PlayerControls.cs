@@ -33,7 +33,6 @@ public class PlayerControls : MonoBehaviour
         if(CanMoveForward)
             transform.position += Time.deltaTime * ForwardSpeed * transform.forward;
 
-
         if(_reset)
         {
             transform.position = _startPos;
