@@ -11,7 +11,11 @@ public class SoundAdapter : MonoBehaviour
     {
         SoundManager.Instance.PlaySound(_soundName,_volume,_name, _loop);
     }
+    public void PlaySound(float volume)
+    {
+        SoundManager.Instance.PlaySound(_soundName, volume, _name, _loop);
 
+    }
     public void StopSound()
     {
         if(string.IsNullOrEmpty(_name))

@@ -4,14 +4,20 @@ public class WindowManager : MonoBehaviour
 {
     GameObject _openedWindow;
     [SerializeField] GameObject _settingsWindow;
-    [SerializeField] bool _canOpenSettings = true;
+    [SerializeField] GameObject _gameOverWindow;
+
     public void OpenSettingsWindow()
     {
         CloseOpenedWindow();
         _settingsWindow.SetActive(true);
         _openedWindow = _settingsWindow;
     }
-
+    public void OpenGameOverWindow()
+    {
+        CloseOpenedWindow();
+        _gameOverWindow.SetActive(true);
+        _openedWindow = _gameOverWindow;
+    }
     public void CloseOpenedWindow()
     {
         if (_openedWindow == null) return;
@@ -22,7 +28,8 @@ public class WindowManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && _canOpenSettings)
+        bool canOpenSettings = _openedWindow != _gameOverWindow;
+        if (Input.GetKeyDown(KeyCode.Escape) && canOpenSettings)
         {
             if(!_settingsWindow.activeInHierarchy)
                 OpenSettingsWindow();

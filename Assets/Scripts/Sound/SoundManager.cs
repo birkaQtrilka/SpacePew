@@ -40,8 +40,8 @@ public class SoundManager : MonoBehaviour
     readonly List<SourceInfo> _activeSources = new();
     Stack<AudioSource> _inactiveSources;
     public static SoundManager Instance { get; private set; }
-    [SerializeField, Range(0, 1)] float _masterVolume;
     public List<SoundData> SoundClips;
+    [field: SerializeField, Range(0, 1)] public float MasterVolume { get; private set; }
 
     void Awake()
     {
@@ -74,7 +74,7 @@ public class SoundManager : MonoBehaviour
 
     public void ChangeMasterVolume(float volume)
     {
-        _masterVolume = volume;
+        MasterVolume = volume;
     }
 
     public void PlaySound(SoundName soundName)
@@ -86,7 +86,7 @@ public class SoundManager : MonoBehaviour
         }
         var source = GetSource();
         source.clip = soundData.Clip;
-        source.volume = soundData.Volume * _masterVolume;
+        source.volume = soundData.Volume * MasterVolume;
         source.Play();
     }
 
@@ -100,7 +100,7 @@ public class SoundManager : MonoBehaviour
 
         AudioSource source = GetSource(name);
         source.clip = data.Clip;
-        source.volume = data.Volume * volumeMult * _masterVolume;
+        source.volume = data.Volume * volumeMult * MasterVolume;
         source.loop = loop;
         source.Play();
     }
@@ -135,7 +135,7 @@ public class SoundManager : MonoBehaviour
         _activeSources.Add(new SourceInfo(source,null));
         source.enabled = true;
         source.loop = false;
-        source.volume = _masterVolume; 
+        source.volume = MasterVolume; 
         return source;
 
     }
@@ -154,7 +154,7 @@ public class SoundManager : MonoBehaviour
         _activeSources.Add(new SourceInfo(source, nameSource));
 
         source.loop = false;
-        source.volume = _masterVolume; 
+        source.volume = MasterVolume; 
         source.enabled = true;
 
         return source;
