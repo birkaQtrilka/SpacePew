@@ -23601,7 +23601,7 @@ MonoBehaviour:
   - Name: 4
     Volume: 1
     Clip: {fileID: 8300000, guid: e0a10b2d1eb928245993638f4efea06e, type: 3}
-  <MasterVolume>k__BackingField: 0
+  <MasterVolume>k__BackingField: 1
 --- !u!4 &1580055272
 Transform:
   m_ObjectHideFlags: 0
