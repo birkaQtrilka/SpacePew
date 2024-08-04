@@ -5,14 +5,18 @@ public class EnemyMovement : MonoBehaviour
     [field: SerializeField] public float HorizontalSpeed { get; set; } = 100f;
     [field: SerializeField] public float HorizontalAmplitude { get; set; } = 1f;
     [field: SerializeField] public float ForwardSpeed { get; set; }
+
+    public float BaseForwardSpeed { get; private set; }
     Vector3 _constraintStart;
     Vector3 _constraintEnd;
     float _randomOffset;
+
     public void Init(Vector3 constraintStart, Vector3 contrstaintEnd)
     {
         _constraintStart = constraintStart;
         _constraintEnd = contrstaintEnd;
         _randomOffset = Random.Range(1, 30);
+        BaseForwardSpeed = ForwardSpeed;
     }
 
     void Update()

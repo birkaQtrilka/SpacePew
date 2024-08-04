@@ -63,6 +63,30 @@ MonoBehaviour:
   <MaterialThreshHold>k__BackingField:
     Threshold: 0.5
     Material: {fileID: 2100000, guid: 4e9ee5fc6f8d23744b656528edfb8d49, type: 2}
+  <DifficultyToMoveSpeed>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.99827194
+      value: 0.0029907227
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2.0008926
+      value: 0.9973526
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   <DifficultyToSpawnRate>k__BackingField:
     serializedVersion: 2
     m_Curve:

@@ -956,10 +956,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1431378361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -793, y: 471}
-  m_SizeDelta: {x: 307.3239, y: 76.831}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 180, y: -50}
+  m_SizeDelta: {x: 307.3239, y: 76.83099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342981205
 MonoBehaviour:
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2214,9 +2214,9 @@ RectTransform:
   - {fileID: 489247633}
   m_Father: {fileID: 1431378361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 678, y: 471}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -254, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653473231
@@ -3001,7 +3001,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 1500
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -3028,7 +3028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17382003, y: -0, z: -0, w: 0.98477745}
+  m_LocalRotation: {x: 0.17382003, y: 0, z: 0, w: 0.98477745}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3416,6 +3416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679ba094a4b34c44088e6144462e42cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Data>k__BackingField: {fileID: 11400000, guid: 7da15708ce390af47be919555950a554,
+    type: 2}
   _maxScoreToIncreaseDifficulty: 200
   _difficultyIncreaseCurve:
     serializedVersion: 2
@@ -9374,12 +9376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 2
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -15573,8 +15575,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -70, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -69, y: -85}
+  m_SizeDelta: {x: 98, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871226886
 MonoBehaviour:
@@ -16169,7 +16171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: 136}
+  m_AnchoredPosition: {x: -20, y: 85}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2068250683
@@ -16290,7 +16292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130.20776, y: 0.0013795}
+  m_AnchoredPosition: {x: 130.20776, y: 0}
   m_SizeDelta: {x: 210.6161, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128768755
@@ -17145,7 +17147,7 @@ PrefabInstance:
     - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
         type: 3}
       propertyPath: _enemyVariants.Array.size
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
         type: 3}
@@ -17188,6 +17190,60 @@ PrefabInstance:
       propertyPath: _enemyVariants.Array.data[6]
       value: 
       objectReference: {fileID: 224453293579178593, guid: dbfad26ac6c007042b56b4aea355c7a4,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: <SpawnTimerMax>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: <SpawnTimerMin>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[0].Chance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[1].Chance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[2].Chance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[3].Chance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[0].ToSpawn
+      value: 
+      objectReference: {fileID: 8013724475073181419, guid: 13aa37cdd1a02a4488cf7a7e8a20dbca,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[1].ToSpawn
+      value: 
+      objectReference: {fileID: 224453293579178593, guid: dbfad26ac6c007042b56b4aea355c7a4,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[2].ToSpawn
+      value: 
+      objectReference: {fileID: 8692656171735629050, guid: 1ae0581c0a49e4c40a56a58e32dc23e4,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[3].ToSpawn
+      value: 
+      objectReference: {fileID: 8013724475073181419, guid: 7aae7b2b7ba5e574593cfae910a27a65,
         type: 3}
     - target: {fileID: 4464382201561841149, guid: 15ee790188a016248b058b2e41e0e0c7,
         type: 3}

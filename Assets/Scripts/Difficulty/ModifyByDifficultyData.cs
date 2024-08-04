@@ -7,10 +7,12 @@ public class ModifyByDifficultyData : ScriptableObject
     [field: SerializeField] public AnimationCurve DifficultyToDamage { get; private set; }
     [field: SerializeField] public AnimationCurve DifficultyToSpeed { get; private set; }
     [field: SerializeField] public MaterialChanger MaterialThreshHold { get; private set; }
+    [field: SerializeField] public AnimationCurve DifficultyToMoveSpeed { get; private set; }
     [field: SerializeField] public AnimationCurve DifficultyToSpawnRate { get; private set; }
 
     
 }
+
 [Serializable]
 public abstract class ThresholdChanger
 {

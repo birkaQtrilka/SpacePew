@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class ShooterModifierByDifficulty : MonoBehaviour
 {
-    [SerializeField] ModifyByDifficultyData _data;
     [SerializeField] Shooter[] _shooters;
 
     readonly List<Action<Bullet>> _bulletMods = new();
     DifficultyManager _difficultyManager;
-
+    ModifyByDifficultyData _data;
     void Start()
     {
         _difficultyManager = DifficultyManager.Instance;
+        _data = _difficultyManager.Data;
         _difficultyManager.DifficultyIncreased += OnDifficultyIncrease;
         OnDifficultyIncrease(_difficultyManager.CurrentDifficulty);
     }

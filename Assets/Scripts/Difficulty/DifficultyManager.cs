@@ -6,6 +6,8 @@ public class DifficultyManager : MonoBehaviour
     public event Action<float> DifficultyIncreased;
     public static DifficultyManager Instance { get; private set; }
     public float CurrentDifficulty { get; private set; }
+    [field:SerializeField] public ModifyByDifficultyData Data { get; private set; }
+
 
     [SerializeField] int _maxScoreToIncreaseDifficulty;
     [SerializeField] AnimationCurve _difficultyIncreaseCurve;

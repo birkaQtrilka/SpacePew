@@ -197,9 +197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyVariants:
-  - {fileID: 8013724475073181419, guid: 13aa37cdd1a02a4488cf7a7e8a20dbca, type: 3}
-  SpawnTimerMin: 0
-  SpawnTimerMax: 0
+  - ToSpawn: {fileID: 0}
+    Chance: 0
+  <SpawnTimerMin>k__BackingField: 2
+  <SpawnTimerMax>k__BackingField: 3
   _spawnStart: {fileID: 701787297543350216}
   _spawnEnd: {fileID: 3955475027440682791}
 --- !u!114 &6157491436637220158
@@ -214,7 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 823f92c0a10f8cf4e8a02ccedb0520ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _difficultyConfig: {fileID: 11400000, guid: 636411245f0dd54428c7f6afbf77bdd3, type: 2}
 --- !u!1 &4765142067346342420
 GameObject:
   m_ObjectHideFlags: 0

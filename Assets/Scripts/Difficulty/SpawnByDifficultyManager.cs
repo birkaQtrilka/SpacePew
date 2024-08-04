@@ -3,7 +3,6 @@ using UnityEngine;
 [RequireComponent (typeof(EnemySpawner))]
 public class SpawnByDifficultyManager : MonoBehaviour
 {
-    [SerializeField] ModifyByDifficultyData _difficultyConfig;
     DifficultyManager _difficultyManager;
     EnemySpawner _enemySpawner;
 
@@ -22,8 +21,8 @@ public class SpawnByDifficultyManager : MonoBehaviour
 
     void OnDifficultyIncrease(float currDifficulty)
     {
-        _enemySpawner.SpawnTimerMin = _startMin - _difficultyConfig.DifficultyToSpawnRate.Evaluate(currDifficulty);
-        _enemySpawner.SpawnTimerMax = _startMax - _difficultyConfig.DifficultyToSpawnRate.Evaluate(currDifficulty);
+        _enemySpawner.SpawnTimerMin = _startMin - _difficultyManager.Data.DifficultyToSpawnRate.Evaluate(currDifficulty);
+        _enemySpawner.SpawnTimerMax = _startMax - _difficultyManager.Data.DifficultyToSpawnRate.Evaluate(currDifficulty);
     }
 
     void OnDestroy()

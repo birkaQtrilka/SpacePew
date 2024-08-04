@@ -17479,6 +17479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679ba094a4b34c44088e6144462e42cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Data>k__BackingField: {fileID: 11400000, guid: cd6584437f0a19a4fbee7626a3b46d02,
+    type: 2}
   _maxScoreToIncreaseDifficulty: 300
   _difficultyIncreaseCurve:
     serializedVersion: 2
@@ -31167,7 +31169,7 @@ PrefabInstance:
     - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
         type: 3}
       propertyPath: _enemyVariants.Array.size
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
         type: 3}
@@ -31216,6 +31218,72 @@ PrefabInstance:
       propertyPath: _enemyVariants.Array.data[7]
       value: 
       objectReference: {fileID: 8013724475073181419, guid: 7aae7b2b7ba5e574593cfae910a27a65,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[0].Chance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[1].Chance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[2].Chance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[3].Chance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[4].Chance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[5].Chance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[0].ToSpawn
+      value: 
+      objectReference: {fileID: 8013724475073181419, guid: 13aa37cdd1a02a4488cf7a7e8a20dbca,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[1].ToSpawn
+      value: 
+      objectReference: {fileID: 224453293579178593, guid: dbfad26ac6c007042b56b4aea355c7a4,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[2].ToSpawn
+      value: 
+      objectReference: {fileID: 8692656171735629050, guid: 1ae0581c0a49e4c40a56a58e32dc23e4,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[3].ToSpawn
+      value: 
+      objectReference: {fileID: 8013724475073181419, guid: 7aae7b2b7ba5e574593cfae910a27a65,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[4].ToSpawn
+      value: 
+      objectReference: {fileID: 86121134185124320, guid: 94a3fe41c9195f541ac24da4c33fbd94,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[5].ToSpawn
+      value: 
+      objectReference: {fileID: 7226529171532299912, guid: 2282227722e74a64eaf82ca88ee4382e,
         type: 3}
     - target: {fileID: 4464382201561841149, guid: 15ee790188a016248b058b2e41e0e0c7,
         type: 3}

@@ -12312,6 +12312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679ba094a4b34c44088e6144462e42cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Data>k__BackingField: {fileID: 11400000, guid: 7da15708ce390af47be919555950a554,
+    type: 2}
   _maxScoreToIncreaseDifficulty: 50
   _difficultyIncreaseCurve:
     serializedVersion: 2
@@ -13509,7 +13511,7 @@ MonoBehaviour:
   - Name: 2
     Volume: 0.1
     Clip: {fileID: 8300000, guid: 4d64a9dac6aaf0b49a3a1a450da60d35, type: 3}
-  <MasterVolume>k__BackingField: 0
+  <MasterVolume>k__BackingField: 1
 --- !u!4 &1580055272
 Transform:
   m_ObjectHideFlags: 0
@@ -19784,11 +19786,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -20456,6 +20458,49 @@ PrefabInstance:
       propertyPath: _enemyVariants.Array.data[5]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: <SpawnTimerMax>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: <SpawnTimerMin>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[0].Chance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[1].Chance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[2].Chance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[0].ToSpawn
+      value: 
+      objectReference: {fileID: 86121134185124320, guid: 94a3fe41c9195f541ac24da4c33fbd94,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[1].ToSpawn
+      value: 
+      objectReference: {fileID: 224453293579178593, guid: dbfad26ac6c007042b56b4aea355c7a4,
+        type: 3}
+    - target: {fileID: 4369325899104554884, guid: 15ee790188a016248b058b2e41e0e0c7,
+        type: 3}
+      propertyPath: _enemyVariants.Array.data[2].ToSpawn
+      value: 
+      objectReference: {fileID: 7226529171532299912, guid: 2282227722e74a64eaf82ca88ee4382e,
+        type: 3}
     - target: {fileID: 4464382201561841149, guid: 15ee790188a016248b058b2e41e0e0c7,
         type: 3}
       propertyPath: _cameraShaker
